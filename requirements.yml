@@ -33,3 +33,13 @@
   name: docker-ce
   path: roles/
   version: master
+
+- src: https://github.com/davidfm/ansible-kubectl.git
+  name: kubectl
+  path: roles/
+  version: master
+
+- src: https://github.com/davidfm/ansible-intellij-idea.git
+  name: intellij-idea
+  path: roles/
+  version: master
