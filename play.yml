@@ -1,0 +1,38 @@
+---
+- hosts: localhost
+  become: true
+  vars:
+    my_username: fernad
+    my_full_name: 'David Fernandez'
+    my_email: david@davidfm.es
+  roles:
+    - {
+        role: linux-user,
+        username: "{{ my_username }}",
+        passwd: "{{ my_password }}",
+        comment: "{{ my_full_name }}",
+        user_groups: ["{{ my_username }}",],
+        sudo_permissions: true,
+        set_passwordless_sudo: true
+    }
+
+    - {
+        role: zsh,
+        user: "{{ my_username }}",
+    }
+
+    - vim
+    - python3
+    - {
+        role: git,
+        git_user_name: "{{ my_full_name }}",
+        git_user_email: "{{ my_email }}",
+        linux_user_name: "{{ my_username }}"
+    }
+    - {
+        role: awscli,
+        aws_access_key_id: 'superscretkey',
+        aws_secret_access_key: 'supersecretkey',
+        linux_user: "{{ my_username }}",
+    }
+    - docker-ce
