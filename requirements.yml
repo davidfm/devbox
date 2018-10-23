@@ -1,0 +1,35 @@
+---
+- src: https://github.com/davidfm/ansible-linux-user.git
+  name: linux-user
+  path: roles/
+  version: master
+
+- src: https://github.com/davidfm/ansible-zsh.git
+  name: zsh
+  path: roles/
+  version: master
+
+- src: https://github.com/davidfm/ansible-vim.git
+  name: vim
+  path: roles/
+  version: master
+
+- src: https://github.com/davidfm/ansible-python3.git
+  name: python3
+  path: roles/
+  version: master
+
+- src: https://github.com/davidfm/ansible-git.git
+  name: git
+  path: roles/
+  version: master
+
+- src: https://github.com/davidfm/ansible-awscli.git
+  name: awscli
+  path: roles/
+  version: master
+
+- src: https://github.com/davidfm/ansible-docker-ce.git
+  name: docker-ce
+  path: roles/
+  version: master
