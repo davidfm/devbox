@@ -38,3 +38,7 @@
     - docker-ce
     - kubectl
     - intellij-idea
+    - {
+        role: my-devbox,
+        linux_user: "{{ my_username }}"
+    }

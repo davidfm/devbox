@@ -43,3 +43,8 @@
   name: intellij-idea
   path: roles/
   version: master
+
+- src: https://github.com/davidfm/ansible-my-devbox.git
+  name: my-devbox
+  path: roles/
+  version: master
