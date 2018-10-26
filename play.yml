@@ -4,7 +4,7 @@
   vars:
     my_username: fernad
     my_full_name: 'David Fernandez'
-    my_email: david@davidfm.es
+    my_email: 'my@email'
   roles:
     - {
         role: linux-user,
@@ -36,3 +36,5 @@
         linux_user: "{{ my_username }}",
     }
     - docker-ce
+    - kubectl
+    - intellij-idea
